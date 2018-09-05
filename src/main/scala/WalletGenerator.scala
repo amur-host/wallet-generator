@@ -241,7 +241,7 @@ object WalletGenerator extends App {
   parser.parse(args, Config()) map { config =>
 
     val addrVersion:Byte = 1
-    val chainId:Byte = if(config.testnet) 'T' else 'W'
+    val chainId:Byte = if(config.testnet) 'T' else 'Q'
 
     if (!config.append) new File(WalletFileName).delete()
     val db: MVStore = new MVStore.Builder().fileName(WalletFileName).encryptionKey(config.password.toCharArray).compress().open()
