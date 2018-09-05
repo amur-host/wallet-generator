@@ -15,7 +15,7 @@ object WalletGenerator extends App {
   val WalletFileName = "wallet.dat"
 
   val parser = new OptionParser[Config]("walletgenerator") {
-    head("Waves wallet generator", "1.1")
+    head("Amur wallet generator", "1.1")
     opt[Unit]('a', "append").action((_, c) =>
       c.copy(append = true)).text("append to existing wallet.dat / addresses.csv")
     opt[Int]('c', "count").action((x, c) =>

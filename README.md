@@ -1,12 +1,12 @@
-# Waves wallet generator
-This tool generates Waves addresses with 15 word seeds compatible with Waves Lite Client and Waves Full Node. The output is exported to a 'wallet.dat' for the Full Node and to a CSV file, 'addresses.csv', which contains the list of all generated addresses with seeds, private keys and public keys.
+# Amur wallet generator
+This tool generates Amur addresses with 15 word seeds compatible with Amur Lite Client and Amur Full Node. The output is exported to a 'wallet.dat' for the Full Node and to a CSV file, 'addresses.csv', which contains the list of all generated addresses with seeds, private keys and public keys.
 
 
 ## Usage
 
 ```
 $ java -jar walletgenerator.jar --help
-Waves wallet generator 1.1
+Amur wallet generator 1.1
 Usage: walletgenerator [options]
 
   -a, --append            append to existing wallet.dat / addresses.csv
